@@ -222,6 +222,15 @@ console.log(totals);
 
 */
 
-/// Intro to Objects 
+/////// Intro to Objects 
+// Arrays for structured / Ordered Data
+// Objects for unstructed Data
+
+const dustin = {
+    firstName: 'Dustin',
+    lastName: 'Wagner',
+    age: 2023 - 1986,
+    friends: ['Josh', 'Chris', 'Justin']
+};
 
 

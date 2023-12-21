@@ -173,9 +173,17 @@ neighbors[2] = 'Ocean';
 // }
 console.log(neighbors);
 
-
  */
 
+// Intro to Objects
+
+const myCountry = {
+    country: 'USA',
+    capital: 'Washington, D.C.',
+    language: 'English',
+    population: '334.9 million',
+    neighbours: ['Canada', 'Mexico']
+};
 
 
 
