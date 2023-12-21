@@ -222,7 +222,7 @@ console.log(totals);
 
 */
 
-/////// Intro to Objects 
+/////// Intro to Objects ////////////////
 // Arrays for structured / Ordered Data
 // Objects for unstructed Data
 
@@ -230,7 +230,35 @@ const dustin = {
     firstName: 'Dustin',
     lastName: 'Wagner',
     age: 2023 - 1986,
+    job: 'mechanic',
     friends: ['Josh', 'Chris', 'Justin']
 };
+console.log(dustin);
+
+//////// Dot vs. Bracket Notation//////////
+
+console.log(dustin.lastName);
+console.log(dustin['lastName']);
+
+const nameKey = 'Name';
+console.log(dustin['first' + nameKey]); // able to place expressions
+console.log(dustin['last' + nameKey]); // inside brackets
+
+// console.log(dustin.'last' + nameKey); Does Not Work
+
+const interestedIn = prompt('What do you want to know about Dustin? Choose between firstName, lastName, age, job, and friends.');
+// console.log(dustin.interestedIn); does not work, needs brackets
+if (dustin[interestedIn]) {
+    console.log(dustin[interestedIn]);
+} else {
+    console.log('Wrong request Choose between firstName, lastName, age, job, and friends.')
+}
+
+dustin.location = 'USA';
+dustin['twitter'] = '@twitterHandle';
+console.log(dustin);
+
+// Challenge
+// dustin has 3 friends, and his best friend is Josh
 
 
