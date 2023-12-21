@@ -246,19 +246,19 @@ console.log(dustin['last' + nameKey]); // inside brackets
 
 // console.log(dustin.'last' + nameKey); Does Not Work
 
-const interestedIn = prompt('What do you want to know about Dustin? Choose between firstName, lastName, age, job, and friends.');
-// console.log(dustin.interestedIn); does not work, needs brackets
-if (dustin[interestedIn]) {
-    console.log(dustin[interestedIn]);
-} else {
-    console.log('Wrong request Choose between firstName, lastName, age, job, and friends.')
-}
+// const interestedIn = prompt('What do you want to know about Dustin? Choose between firstName, lastName, age, job, and friends.');
+// // console.log(dustin.interestedIn); does not work, needs brackets
+// if (dustin[interestedIn]) {
+//     console.log(dustin[interestedIn]);
+// } else {
+//     console.log('Wrong request Choose between firstName, lastName, age, job, and friends.')
+// }
 
 dustin.location = 'USA';
 dustin['twitter'] = '@twitterHandle';
-console.log(dustin);
+// console.log(dustin);
 
 // Challenge
-// dustin has 3 friends, and his best friend is Josh
+// $dustin has $3 friends, and his best friend is $Josh
 
-
+console.log(dustin.firstName, 'has' dustin.friends.length, 'and his best friend is' dustin.friends[0]);
