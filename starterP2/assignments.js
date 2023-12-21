@@ -181,7 +181,7 @@ const myCountry = {
     country: 'USA',
     capital: 'Washington, D.C.',
     language: 'English',
-    population: '334.9 million',
+    population: 334.9,
     neighbours: ['Canada', 'Mexico']
 };
 
@@ -192,5 +192,10 @@ const myCountry = {
 // 2. Increase the country's population by two million using dot notation, and then
 // decrease it by two million using brackets notation.
 
+const describeCountry = (`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`)
 
+console.log(describeCountry);
 
+console.log(`${myCountry.country} has ${myCountry.population = (myCountry.population + 2)} million ${myCountry.language} - speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
+
+console.log(`${myCountry.country} has ${myCountry['population'] - 2} million ${myCountry.language} - speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
