@@ -261,4 +261,4 @@ dustin['twitter'] = '@twitterHandle';
 // Challenge
 // $dustin has $3 friends, and his best friend is $Josh
 
-console.log(dustin.firstName, 'has' dustin.friends.length, 'and his best friend is' dustin.friends[0]);
+console.log(dustin.firstName, 'has', dustin.friends.length, 'friends,', 'and his best friend is', dustin.friends[0], '.');
