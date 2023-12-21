@@ -192,10 +192,20 @@ const myCountry = {
 // 2. Increase the country's population by two million using dot notation, and then
 // decrease it by two million using brackets notation.
 
-const describeCountry = (`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`)
+// const describeCountry = (`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`)
 
-console.log(describeCountry);
+// console.log(describeCountry);
 
-console.log(`${myCountry.country} has ${myCountry.population = (myCountry.population + 2)} million ${myCountry.language} - speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
+// console.log(`${myCountry.country} has ${myCountry.population = (myCountry.population + 2)} million ${myCountry.language} - speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
 
-console.log(`${myCountry.country} has ${myCountry['population'] - 2} million ${myCountry.language} - speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
+// console.log(`${myCountry.country} has ${myCountry['population'] - 2} million ${myCountry.language} - speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
+
+///////correction///////
+
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries, and a capital called ${myCountry.capital}.`)
+
+myCountry.population += 2;  // adding to population w/ dot notation
+console.log(myCountry.population);
+
+myCountry['population'] -= 2; //subtract from population w/ bracket notation
+console.log(myCountry.population);
