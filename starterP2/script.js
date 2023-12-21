@@ -220,7 +220,7 @@ console.log(tips);
 console.log(totals);
 
 
-*/
+
 
 /////// Intro to Objects ////////////////
 // Arrays for structured / Ordered Data
@@ -262,3 +262,9 @@ dustin['twitter'] = '@twitterHandle';
 // $dustin has $3 friends, and his best friend is $Josh
 
 console.log(dustin.firstName, 'has', dustin.friends.length, 'friends,', 'and his best friend is', dustin.friends[0], '.');
+
+// Dynamically written, Better I believe, with punctuation for sure.
+console.log(`${dustin.firstName} has ${dustin.friends.length} friends, and his best friend is ${dustin.friends[0]}.`);
+
+*/
+
