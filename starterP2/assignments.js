@@ -173,7 +173,7 @@ neighbors[2] = 'Ocean';
 // }
 console.log(neighbors);
 
- */
+
 
 // Intro to Objects
 
@@ -209,3 +209,5 @@ console.log(myCountry.population);
 
 myCountry['population'] -= 2; //subtract from population w/ bracket notation
 console.log(myCountry.population);
+
+*/

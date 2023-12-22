@@ -268,3 +268,44 @@ console.log(`${dustin.firstName} has ${dustin.friends.length} friends, and his b
 
 */
 
+// Object methods Lecture not working 12-22-24,
+// following along with Objects and Keyword This tutorial
+// >> https://youtu.be/qs3F-z6ridc?si=s1jtdW5xCwSxEJqc >>
+
+//Object, like user profile 
+const user1 = {
+    name: 'Edwin', //string
+    class: 'Rogue',
+    age: 24,       // number
+    level: 15,
+    isHalfling: false, // boolean
+    skills: ['Acrobatics', 'Cantrips', 'Deception'], // array
+    // functions attatched to an Object are Methods
+
+    sayName: function () {
+        console.log(this.name); // THIS here is assigned when invoking the function, USER in this case, so THIS is assigned from USER
+    },
+
+    sayMarried: function () {
+        console.log(this.class);
+    },
+
+    sayDesc: function () {
+        console.log(`  Hello I am ${this.name} and I'm a ${this.age} year old level ${this.level} ${this.class}. `);
+
+        if (this.isHalfling === true) {
+            const yesHalf = `I am rather large for my kind and I excel at ${this.skills[0]}, ${this.skills[1]}, and ${this.skills[2]}. `;
+            console.log();
+            return console.log(yesHalf);
+        } else {
+            console.log(`I excel at ${this.skills[0]}, ${this.skills[1]}, and ${this.skills[2]}. `)
+        }
+    }
+
+};
+user1.sayName(); // USER here is assigning THIS above
+//access the different properties inside the object
+// console.log(user.skills);
+// console.log(user.age, user.name);
+user1.sayDesc();
+
