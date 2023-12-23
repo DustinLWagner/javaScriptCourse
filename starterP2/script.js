@@ -266,13 +266,13 @@ console.log(dustin.firstName, 'has', dustin.friends.length, 'friends,', 'and his
 // Dynamically written, Better I believe, with punctuation for sure.
 console.log(`${dustin.firstName} has ${dustin.friends.length} friends, and his best friend is ${dustin.friends[0]}.`);
 
-*/
+
 
 // Object methods Lecture not working 12-22-24,
 // following along with Objects and Keyword This tutorial
 // >> https://youtu.be/qs3F-z6ridc?si=s1jtdW5xCwSxEJqc >>
 
-//Object, like user profile 
+//Object, like user profile
 const user1 = {
     name: 'Edwin', //string
     class: 'Rogue',
@@ -311,3 +311,33 @@ user1.sayName(); // USER here is assigning THIS above
 user1.sayClass();
 user1.sayDesc();
 
+*/
+/////12-22-24 back to Udemy course///////////
+
+/////// Part 2 - 44  Objects Methods/////////
+
+const dustin = {            // 'this' the object calling the function
+    firstName: 'Dustin',
+    lastName: 'Wagner',
+    birthYear: 1986,
+    job: 'mechanic',
+    friends: ['Josh', 'Chris', 'Justin'],
+    hasDriversLicense: true,
+    // calcAge: function (birthYear) {
+    //     return 2024 - birthYear;
+    // }
+    // calcAge: function () {
+    //     // console.log(this);
+    //     return 2024 - this.birthYear;  //here 'this' is the object calling the function, so birthYear is dustin.birthYear
+    // }
+    calcAge: function () {
+        this.age = 2024 - this.birthYear;
+        return this.age;
+    }
+};
+// console.log(dustin.calcAge(1986));
+// console.log(dustin['calcAge'](1986));
+console.log(dustin.calcAge()); // left of function is calling function
+console.log(dustin.calcAge());
+console.log(dustin.calcAge());
+console.log(dustin.age);
