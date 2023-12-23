@@ -326,18 +326,27 @@ const dustin = {            // 'this' the object calling the function
     // calcAge: function (birthYear) {
     //     return 2024 - birthYear;
     // }
+
     // calcAge: function () {
     //     // console.log(this);
     //     return 2024 - this.birthYear;  //here 'this' is the object calling the function, so birthYear is dustin.birthYear
-    // }
+
     calcAge: function () {
         this.age = 2024 - this.birthYear;
         return this.age;
+    },
+
+    getSummary: function () {
+        return `${this.firstName} is a ${this.age} year old ${this.job}, has ${this.hasDriversLicense ? 'a' : 'no'} drivers license.`
     }
 };
-// console.log(dustin.calcAge(1986));
-// console.log(dustin['calcAge'](1986));
-console.log(dustin.calcAge()); // left of function is calling function
+
 console.log(dustin.calcAge());
-console.log(dustin.calcAge());
+
 console.log(dustin.age);
+console.log(dustin.age);
+console.log(dustin.age);
+
+// write method called getSummary, return string summarizing data about Dustin
+// Dustin is a 38 year old mechanic, and has a / no drivers license.
+console.log(dustin.getSummary());
