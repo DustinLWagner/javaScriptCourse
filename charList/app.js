@@ -21,15 +21,16 @@ const user1 = {
     },
 
     sayDesc: function () {
-        console.log(`  Hello, I am ${this.name} and I am a  level ${this.level} ${this.class} ${this.race}.`);
+        console.log(`  Hello, I am ${this.name} and I am a  level ${this.level} ${this.class} ${this.race}. ${this.isHalfling ? `I am rather large for my kind and I excel at` : `I excel at`} ${this.skills[0]}, ${this.skills[1]}, and ${this.skills[2]}.`);
 
-        if (this.isHalfling === true) {
-            const yesHalf = `I am rather large for my kind and I excel at ${this.skills[0]}, ${this.skills[1]}, and ${this.skills[2]}. `;
-            console.log();
-            return console.log(yesHalf);
-        } else {
-            console.log(`I excel at ${this.skills[0]}, ${this.skills[1]}, and ${this.skills[2]}. `)
-        }
+        //Replaced following with Ternary Operation
+        // if (this.isHalfling === true) {
+        //     const yesHalf = `I am rather large for my kind and I excel at ${this.skills[0]}, ${this.skills[1]}, and ${this.skills[2]}. `;
+        //     console.log();
+        //     return console.log(yesHalf);
+        // } else {
+        //     console.log(`I excel at ${this.skills[0]}, ${this.skills[1]}, and ${this.skills[2]}. `)
+        // }
     }
 
 };
@@ -54,15 +55,16 @@ const user2 = {
     },
 
     sayDesc: function () {
-        console.log(`  Hello, I am ${this.name} and I am a  level ${this.level} ${this.class} ${this.race}.`);
+        console.log(`  Hello, I am ${this.name} and I am a  level ${this.level} ${this.class} ${this.race}. ${this.isHalfling ? `I am rather large for my kind and I excel at` : `I excel at`} ${this.skills[0]}, ${this.skills[1]}, and ${this.skills[2]}.`);
 
-        if (this.isHalfling === true) {
-            const yesHalf = `I am rather large for my kind and I excel at ${this.skills[0]}, ${this.skills[1]}, and ${this.skills[2]}. `;
-            console.log();
-            return console.log(yesHalf);
-        } else {
-            console.log(`I excel at ${this.skills[0]}, ${this.skills[1]}, and ${this.skills[2]}. `)
-        }
+        //Replaced following with Ternary Operation
+        // if (this.isHalfling === true) {
+        //     const yesHalf = `I am rather large for my kind and I excel at ${this.skills[0]}, ${this.skills[1]}, and ${this.skills[2]}. `;
+        //     console.log();
+        //     return console.log(yesHalf);
+        // } else {
+        //     console.log(`I excel at ${this.skills[0]}, ${this.skills[1]}, and ${this.skills[2]}. `)
+        // }
     }
 
 };

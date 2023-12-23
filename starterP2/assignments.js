@@ -177,13 +177,13 @@ console.log(neighbors);
 
 // Intro to Objects
 
-const myCountry = {
-    country: 'USA',
-    capital: 'Washington, D.C.',
-    language: 'English',
-    population: 334.9,
-    neighbours: ['Canada', 'Mexico']
-};
+// const myCountry = {
+//     country: 'USA',
+//     capital: 'Washington, D.C.',
+//     language: 'English',
+//     population: 334.9,
+//     neighbours: ['Canada', 'Mexico']
+// };
 
 //////// Dot vs Bracket Notaion //////////////
 // 1. Using the object from the previous assignment, log a string like this to the
@@ -202,16 +202,15 @@ const myCountry = {
 
 ///////correction///////
 
-console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries, and a capital called ${myCountry.capital}.`)
+// console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries, and a capital called ${myCountry.capital}.`)
 
-myCountry.population += 2;  // adding to population w/ dot notation
-console.log(myCountry.population);
+// myCountry.population += 2;  // adding to population w/ dot notation
+// console.log(myCountry.population);
 
-myCountry['population'] -= 2; //subtract from population w/ bracket notation
-console.log(myCountry.population);
+// myCountry['population'] -= 2; //subtract from population w/ bracket notation
+// console.log(myCountry.population);
 
 */
-
 //////////////////// LECTURE: Object Methods////////////////////
 
 
@@ -220,3 +219,23 @@ console.log(myCountry.population);
 // 2. Call the 'describe' method
 
 // 3. Add a method called 'checkIsland' to the 'myCountry' object. This method will set a new property on the object, called 'isIsland'.'isIsland' will be true if there are no neighbouring countries, and false if there are. Use the ternary operator to set the property.
+
+const myCountry = {
+    country: 'USA',
+    capital: 'Washington, D.C.',
+    language: 'English',
+    population: 334.9,
+    neighbours: ['Canada', 'Mexico'],
+
+
+
+    describe: function () {
+        return ` ${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`
+    },
+
+    checkIsland: function () {
+        return this.neighbours.length <= 0
+    },
+};
+console.log(myCountry.describe());
+console.log(myCountry.checkIsland());

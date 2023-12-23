@@ -337,7 +337,7 @@ const dustin = {            // 'this' the object calling the function
     },
 
     getSummary: function () {
-        return `${this.firstName} is a ${this.age} year old ${this.job}, has ${this.hasDriversLicense ? 'a' : 'no'} drivers license.`
+        return `${this.firstName} is a ${this.age} year old ${this.job}, and has ${this.hasDriversLicense ? 'a' : 'no'} drivers license.`
     }
 };
 
