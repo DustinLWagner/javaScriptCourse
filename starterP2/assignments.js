@@ -245,8 +245,8 @@ const myCountry = {
 console.log(myCountry.checkIsland());
 myCountry.describe2();
 
-*/
 
+*/
 //////   Part 2 Challenge #3   ///////////
 
 // Let's go back to Mark and John comparing their BMIs! This time, let's use objects to implement the calculations! Remember: BMI = mass / height ** 2 = mass / (height * height) (mass in kg and height in meter)
@@ -268,22 +268,26 @@ const mark = {
     fullName: 'Mark',
     mass: 78,
     height: 1.69,
+    bmi: 0,
     calcBMI: function () {
-        const markBMI = (this.mass / (this.height * this.height));
-        return console.log(markBMI)
+        this.bmi = (this.mass / (this.height * this.height));
+        return this.bmi.toFixed(1);
     }
 }
 
 const john = {
-    fullname: 'John',
+    fullName: 'John',
     mass: 92,
     height: 1.95,
+    bmi: 0,
     calcBMI: function () {
-        const johnBMI = (this.mass / (this.height * this.height));
-        return console.log(johnBMI)
+        this.bmi = (this.mass / (this.height * this.height)).toFixed(1); //round answer to nearest decimal .toFixed
+        return this.bmi;
     }
-
 }
 
-mark.calcBMI();
-john.calcBMI();
+const markBMI = mark.calcBMI();
+const johnBMI = john.calcBMI();
+
+
+console.log(`${mark.fullName}s BMI (${markBMI}) is higher than ${john.fullName}s (${johnBMI}).`);
