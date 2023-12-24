@@ -311,7 +311,7 @@ user1.sayName(); // USER here is assigning THIS above
 user1.sayClass();
 user1.sayDesc();
 
-*/
+
 /////12-22-24 back to Udemy course///////////
 
 /////// Part 2 - 44  Objects Methods/////////
@@ -350,3 +350,6 @@ console.log(dustin.age);
 // write method called getSummary, return string summarizing data about Dustin
 // Dustin is a 38 year old mechanic, and has a / no drivers license.
 console.log(dustin.getSummary());
+
+
+*/

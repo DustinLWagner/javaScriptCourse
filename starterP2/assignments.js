@@ -260,24 +260,30 @@ myCountry.describe2();
 
 // Test data: Marks weights 78 kg and is 1.69 m tall.
 //           John weights 92 kg and is 1.95 m tall
+console.log('yep');
 
-const myCountry = {
-    country: 'The USA',
-    population: 334.9,
-    neighbours: ['Canada', 'Mexico'],
-}
 
 
 const mark = {
     fullName: 'Mark',
     mass: 78,
-    height: 1.69
-
+    height: 1.69,
+    calcBMI: function () {
+        const markBMI = (this.mass / (this.height * this.height));
+        return console.log(markBMI)
+    }
 }
 
 const john = {
     fullname: 'John',
     mass: 92,
     height: 1.95,
+    calcBMI: function () {
+        const johnBMI = (this.mass / (this.height * this.height));
+        return console.log(johnBMI)
+    }
 
 }
+
+mark.calcBMI();
+john.calcBMI();
