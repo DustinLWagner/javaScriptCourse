@@ -270,8 +270,8 @@ const mark = {
     height: 1.69,
     bmi: 0,
     calcBMI: function () {
-        this.bmi = (this.mass / (this.height * this.height));
-        return this.bmi.toFixed(1);
+        this.bmi = (this.mass / (this.height * this.height)).toFixed(1); //toFixed cause fail challenge, leave off  
+        return this.bmi;
     }
 }
 
@@ -290,4 +290,8 @@ const markBMI = mark.calcBMI();
 const johnBMI = john.calcBMI();
 
 
-console.log(`${mark.fullName}s BMI (${markBMI}) is higher than ${john.fullName}s (${johnBMI}).`);
+console.log(`${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${john.fullName}'s (${john.calcBMI()})!`); // Victory message has to be typed EXACTLY like the example to pass.
+
+// PASSSED woot woot
+
+
