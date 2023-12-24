@@ -351,5 +351,5 @@ console.log(dustin.age);
 // Dustin is a 38 year old mechanic, and has a / no drivers license.
 console.log(dustin.getSummary());
 
-
 */
+

@@ -257,7 +257,7 @@ myCountry.describe2();
 
 // 3. Log to the console who has the higher BMI, together with the full name and the respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
 
-*/
+
 // Test data: Marks weights 78 kg and is 1.69 m tall.
 //           John weights 92 kg and is 1.95 m tall
 console.log('yep');
@@ -299,4 +299,4 @@ if (markBMI > johnBMI) {
 
 // PASSSED woot woot
 
-
+*/

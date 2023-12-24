@@ -79,3 +79,26 @@ user1.sayName();
 user1.sayDesc();
 user2.sayName();
 user2.sayDesc();
+
+
+
+
+// let button = document.getElementById('button1');
+
+// function handleClick() {
+//     // alert('Button Clicked!');
+//     let dice1 = prompt('Pick a number!');
+//     return console.log(dice1)
+// }
+// button.addEventListener("click", handleClick);
+
+// if (dice1 == 5 & dice2 == 5) {
+//     console.log('You rolled a double!')
+// } else {
+//     console.log('Roll Again')
+// };
+
+
+
+
+
