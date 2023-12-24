@@ -246,7 +246,7 @@ console.log(myCountry.checkIsland());
 myCountry.describe2();
 
 
-*/
+
 //////   Part 2 Challenge #3   ///////////
 
 // Let's go back to Mark and John comparing their BMIs! This time, let's use objects to implement the calculations! Remember: BMI = mass / height ** 2 = mass / (height * height) (mass in kg and height in meter)
@@ -257,7 +257,7 @@ myCountry.describe2();
 
 // 3. Log to the console who has the higher BMI, together with the full name and the respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
 
-
+*/
 // Test data: Marks weights 78 kg and is 1.69 m tall.
 //           John weights 92 kg and is 1.95 m tall
 console.log('yep');
@@ -289,8 +289,13 @@ const john = {
 const markBMI = mark.calcBMI();
 const johnBMI = john.calcBMI();
 
+if (markBMI > johnBMI) {
+    console.log(`${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${john.fullName}'s (${john.calcBMI()})!`); // Victory message has to be typed EXACTLY like the example to pass.
+} else if (johnBMI > markBMI) {
+    console.log(`${john.fullName})'s BMI (${john.calcBMI()}) is higher than ${mark.fullName}'s (${mark.calcBMI()})!`);
+}
 
-console.log(`${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${john.fullName}'s (${john.calcBMI()})!`); // Victory message has to be typed EXACTLY like the example to pass.
+
 
 // PASSSED woot woot
 
