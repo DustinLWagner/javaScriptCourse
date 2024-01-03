@@ -374,5 +374,53 @@ for (let set = 1; set <= 5; set++) {
     console.log(`Weight lifting set ${set}`);
 };
 
-*/
 
+
+/// Looping arrays, breaking and continuing  ////
+
+const dustin = [
+    'Dustin',
+    'Wagner',
+    2023 - 1986,
+    'mechanic',
+    ['Josh', 'Chris', 'Justin'],
+    true
+];
+const types = [];
+
+
+
+for (let i = 0; i < dustin.length; i++) {
+
+    // Reading from dustin array
+    console.log(dustin[i], typeof dustin[i]);
+
+    // Filling types array
+    // types[i] = typeof dustin[i];
+    types.push(typeof dustin[i]);
+};
+
+console.log(types);
+
+const years = [1986, 2007, 1969, 2020];
+const ages = [];
+for (let i = 0; i < years.length; i++) {
+    ages.push(2024 - years[i])
+}
+console.log(ages)
+
+// Continue and Break
+console.log('----ONLY STRINGS---')
+for (let i = 0; i < dustin.length; i++) {
+    if (typeof dustin[i] !== 'string') continue;
+
+    console.log(dustin[i], typeof dustin[i]);
+}
+
+console.log('----BREAK WITH NUMBER---')
+for (let i = 0; i < dustin.length; i++) {
+    if (typeof dustin[i] === 'number') break;
+
+    console.log(dustin[i], typeof dustin[i]);
+}
+*/

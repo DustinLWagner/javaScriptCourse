@@ -312,4 +312,42 @@ for (let voterNum = 1; voterNum <= 50; voterNum++) {
     console.log(`Voter number ${voterNum} is currently voting`)
 };
 
+
+////LECTURE: Looping Arrays, Breaking and Continuing
+
+1. Let's bring back the 'populations' array from a previous assignment
+2. Use a for loop to compute an array called 'percentages2' containing the
+percentages of the world population for the 4 population values. Use the
+function 'percentageOfWorld1' that you created earlier
+3. Confirm that 'percentages2' contains exactly the same values as the
+'percentages' array that we created manually in the previous assignment,
+and reflect on how much better this solution is
+
+
 */
+const populations = [332, 32, 1441, 3.5];
+const percentages = [
+    percentageOfWorld1(populations[0]),
+    percentageOfWorld1(populations[1]),
+    percentageOfWorld1(populations[2]),
+    percentageOfWorld1(populations[3])
+];
+console.log(percentages);
+
+function percentageOfWorld1(population) {
+    return (population / 7900) * 100;
+}
+
+
+const percentages2 = [];
+
+for (let i = 0; i < populations.length; i++) {
+    //call function inside for loop w/ variable to push into array
+    const perc = percentageOfWorld1(populations[i]);
+    // push array items created with function
+    percentages2.push(perc);
+}
+console.log(percentages2);
+/// more calculations are down with less code, possible faster
+/// execution using loop to execute function multiple times
+
