@@ -351,5 +351,28 @@ console.log(dustin.age);
 // Dustin is a 38 year old mechanic, and has a / no drivers license.
 console.log(dustin.getSummary());
 
+
+
+// 2-46 Iteration: The for  Loop //
+
+
+// console.log('Lifting weights repetition 1');
+// console.log('Lifting weights repetition 2');
+// console.log('Lifting weights repetition 3');
+// console.log('Lifting weights repetition 4');
+// console.log('Lifting weights repetition 5');
+// console.log('Lifting weights repetition 6');
+
+
+//for loop keeps running while condition is TRUE
+
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repetition ${rep}`);
+};
+
+for (let set = 1; set <= 5; set++) {
+    console.log(`Weight lifting set ${set}`);
+};
+
 */
 
